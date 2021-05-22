@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    margin: 40px;
+}
+:root{
+    --primary:#e7105b;
+    --light:#f8e4eb;
+    --secondary:#f5f3f3;
+    --white:rgb(255, 255, 255);
+    --lightgrey :#424446;
+    --textcolor :#7b8383;
+}
+ /* header Part */
+ header .search{
+    float: left;
+    margin-left: 300px;
+ }
+ .searchInput{
+    max-width: max-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color:var(--secondary) ;
+ }
+.searchInput input{
+    background-color:var(--secondary) ;
+    border: none;
+ }
+ .searchInput input:focus{
+    outline: none;
+ }
+ .searchBtn{
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding:5px 20px ;
+    border-radius: 20px;
+}
+ header .bell{
+     float: right;
+     margin-right: 30px;;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+/* float clear property */
+.clear{
+    clear: both;
+}
+
+/* Heading bar  */
+.headingBar{
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.headingBar .profile{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.p-pic{
+    width: 25px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.headingfield{
+    margin-left: 50px;
+}
+.headingStatus{
+    display: flex;
+    margin: 1px 50px;
+}
+.headingStatus .div-1{
+    width: max-content;
+    border: 1px solid var(--textcolor);
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 2px 15px;
+}
+.headingStatus .div-2{
+    color: var(--textcolor);
+    width: max-content;
+    border: 1px solid var(--textcolor);
+    padding: 2px 15px;
+}
+
+.heading .following{
+    display: flex;
+    align-items: center;
+    float: right;
+    margin: 1px 20px;
+}
+.following .plus{
+    border: 0.2px solid var(--secondary);
+    border-radius: 100px;
+    padding: 4px;
+    color: var(--textcolor);
+    margin-right: 5px;
+}
+.following .foll-pic{
+    margin-right: 15px;
+    margin-top: 2px;
+}
+.heading .following .followingDiv{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 4px 10px;
+}
+
+/* sidebar left */
+aside{
+    float: left;
+}
+aside ul li i{
+    color: var(--textcolor);
+    margin-right: 20px;
+}
+aside ul li{
+    padding: 10px 10px;
+}
+
+/* nav right */
+nav{
+    padding: 5px 10px;
+}
+nav .navbar .left{
+    float: left;
+    display: flex;
+}
+.navbar li{
+    font-size: 13px;
+    height: 25px;
+    color: var(--textcolor);
+    font-weight: 900;
+    margin-left: 22px;
+}
+nav .navbar .right{
+    display: flex;
+    float: right;
+    margin-right: 20px;
+}
+.navbar .left li:nth-child(1){
+    border-bottom: 3px solid var(--primary);
+}
+
+/* main content */
+main{
+    display: flex;
+    padding: 5px 20px;
+}
+.dot{
+    font-size: 10px;
+    color: rgb(66, 233, 66);
+}
+main .col{
+    width: 19%;
+    margin-left: 1%;
+    height: 600px;
+    background-color:var(--light) ;
+}
+.col h4{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    color:var(--lightgrey);
+}
+.content{
+    margin: 15px 10px 10px 10px;
+    background-color: var(--white);
+}
+.content .row-1{
+    display: flex;
+    margin: 0px 10px;
+    align-items: center;
+}
+.content .row-2{
+    display: flex;
+    font-size: 13px;
+    color: var(--textcolor);
+    margin: 5px 10px 1px 10px;
+    justify-content: space-between;
+}
+.content .row-3{
+    width: 90%;
+    height: 3px;
+    background-color: var(--textcolor);
+    border-radius: 20px;
+    margin: 10px;
+}
+.content .row-3 .status{
+    width: 40%;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+.content .row-3 .status1{
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+.content .row-4{
+    border-top: 1px solid var(--textcolor);
+    margin: 0px 10px;
+    padding: 5px;
+}
+.content .row-4 span:nth-child(1){
+    margin-left: 0px;
+}
+.content .row-4 span{
+    margin-left: 10px;
+    font-size: 12px;
+    color: var(--textcolor);
+    height: 30px;
+}
+.content .row-5{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 5px;
+}
+.content .row-5 span{
+    margin-left: 10px;
+    font-size: 14px;
+    height: 30px;
+}
+
+/* box-shadow */
+.shadow{
+    box-shadow: -1px 4px 6px -1px rgba(0,0,0,0.61);
+-webkit-box-shadow: -1px 4px 6px -1px rgba(0,0,0,0.61);
+-moz-box-shadow: -1px 4px 6px -1px rgba(0,0,0,0.61);
+}
